@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import React from "react";
+import Header from "./Components/Header.js";
+import SliderCalculator from "./Components/SliderCalculator.js";
+import TextBoard from "./Components/TextBoard";
+import CTA from "./Components/CTA";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="price-slider__container">
+      <Header />
+      <div className="price-slider__card__wrapper">
+        <div className="price-slider__card__top">
+          <SliderCalculator />
+        </div>
+        <div className="price-slider__card__bottom">
+          <div className="price-slider__card__bottom__left-panel">
+            <TextBoard />
+          </div>
+          <div className="price-slider__card__bottom__right-panel">
+            <CTA />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

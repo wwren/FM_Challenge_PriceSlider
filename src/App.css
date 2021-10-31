@@ -1,38 +1,158 @@
-.App {
+:root {
+  /* primary */
+  --full-slider-bar: hsl(174, 77%, 80%);
+  --slider-background: hsl(174, 86%, 45%);
+  --discount-background: hsl(14, 92%, 95%);
+  --discount-text: hsl(15, 100%, 70%);
+  --cta-text: hsl(226, 100%, 87%);
+  /* neutral */
+  --pricing-component-background: hsl(0, 0%, 100%);
+  --main-background: hsl(230, 100%, 99%);
+  --empty-slider-bar: hsl(224, 65%, 95%);
+  --toggle-background: hsl(223, 50%, 87%);
+  --text: hsl(225, 20%, 60%);
+  --text-cta-background: hsl(227, 35%, 25%);
+
+  /* font-size */
+  --intro-font-size: 15px;
+  --font-weight-light: 600;
+  --font-weight-heavy: 800;
+}
+
+.price-slider__container {
+  background-color: var(--main-background);
+  height: 100vh;
+  width: 100vw;
+  color: var(--text);
+  font-size: var(--intro-font-size);
+}
+
+.price-slider__title {
+  margin-top: 0;
+  font-weight: var(--font-weight-heavy);
+  color: black;
+}
+
+.price-slider__header {
+  /* background-color: var(--empty-slider-bar); */
+  background-image: url("./images/bg-pattern.svg");
+  height: 50%;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.price-slider__text {
+  padding-top: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.price-slider__pattern-circle {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-52%);
+}
+.price-slider__card__wrapper {
+  width: 90%;
+  max-width: 600px;
+  height: 42vh;
+  max-height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 17px;
+  box-shadow: 5px 5px 10px #888888;
+  background-color: var(--pricing-component-background);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.price-slider__card__top {
+  width: 90%;
   display: flex;
   flex-direction: column;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8% auto 0;
+}
+
+.price-slider__card__bottom {
+  border-top: 1px solid var(--toggle-background);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-slider__card__bottom__left-panel {
+  width: 40%;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.price-slider__card__bottom__right-panel {
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.price-slider__card__bottom__right-panel button {
+  --webkit-appearance: none;
+  width: 80%;
+  background-color: var(--text-cta-background);
+  color: #ffffff;
+  height: 45px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+@media screen and (max-width: 541px) {
+  .price-slider__container {
+    height: 110vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .price-slider__header {
+    height: 60%;
+  }
+
+  .price-slider__text {
+    padding-top: 30%;
+  }
+
+  .price-slider__pattern-circle {
+    top: 70px;
+  }
+
+  .price-slider__text h1 {
+    font-size: 20px;
+  }
+
+  .price-slider__text p {
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+
+  .price-slider__card__wrapper {
+    top: 70%;
+    height: 75%;
+  }
+
+  .price-slider__card__bottom {
+    flex-direction: column;
+  }
+
+  .price-slider__card__bottom__left-panel {
+    width: 100%;
+    height: 60%;
+  }
+
+  .price-slider__card__bottom__right-panel {
+    width: 60%;
+  }
+
+  .price-slider__card__bottom__right-panel button {
+    width: 100%;
   }
 }
