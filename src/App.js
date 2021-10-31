@@ -4,6 +4,7 @@ import Header from "./Components/Header.js";
 import SliderCalculator from "./Components/SliderCalculator.js";
 import TextBoard from "./Components/TextBoard";
 import CTA from "./Components/CTA";
+import Footer from "./Components/Footer.js";
 function App() {
   return (
     <div className="price-slider__container">
@@ -21,6 +22,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

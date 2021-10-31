@@ -111,6 +111,7 @@
 @media screen and (max-width: 541px) {
   .price-slider__container {
     height: 110vh;
+    padding-bottom: 50px;
   }
 
   .price-slider__header {
