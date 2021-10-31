@@ -16,7 +16,9 @@ function SliderCalculator() {
     if (mounted) {
       console.log("priceInput", priceInput);
       let price = parseInt(priceInput);
-      if (price < 12) {
+      if (price < 8) {
+        setpageview("0");
+      } else if (price >= 8 && price < 12) {
         setpageview("10k");
       } else if (price >= 12 && price < 16) {
         setpageview("50k");
@@ -41,7 +43,7 @@ function SliderCalculator() {
           <span className="price-slider__card__price--bold">
             $
             {isYearBill
-              ? parseInt(priceInput) * (1 - DISCOUNT_PERCENTAGE)
+              ? (parseFloat(priceInput) * (1 - DISCOUNT_PERCENTAGE)).toFixed(2)
               : priceInput}
           </span>
           <span>/month</span>
@@ -52,7 +54,7 @@ function SliderCalculator() {
         <span className="price-slider__card__price--bold">
           $
           {isYearBill
-            ? parseInt(priceInput) * (1 - DISCOUNT_PERCENTAGE)
+            ? (parseFloat(priceInput) * (1 - DISCOUNT_PERCENTAGE)).toFixed(2)
             : priceInput}
         </span>
         <span>/month</span>

@@ -8,7 +8,7 @@ function Slider({ defaultPriceInput, setpriceInput }) {
   const slider = useRef();
 
   const handleInput = () => {
-    setpriceInput(slider.current.value);
+    setpriceInput(parseFloat(slider.current.value).toFixed(2));
     if (slider.current) {
       let percentage = `${Math.round(
         (slider.current.value / MAX_SLIDER_VALUE) * 100
