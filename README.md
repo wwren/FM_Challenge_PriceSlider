@@ -1,8 +1,10 @@
 # Frontend Component Price Slider :eyes:
 
 <p>
-<img src="./price_slider.png" width="400px">
-<img src="./price_slider_mobile.png" width="400px">
+<img src="./price_slider.png" width="100%">
+</p>
+<p>
+<img src="./price_slider_mobile.png" width="100%">
 </p>
 
 ### Table of Contents
