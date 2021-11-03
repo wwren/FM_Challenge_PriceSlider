@@ -110,7 +110,7 @@
 }
 @media screen and (max-width: 541px) {
   .price-slider__container {
-    height: 110vh;
+    height: 115vh;
     padding-bottom: 50px;
   }
 
@@ -136,7 +136,7 @@
   }
 
   .price-slider__card__wrapper {
-    top: 70%;
+    top: 75%;
     height: 75%;
   }
 

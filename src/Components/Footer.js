@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <a
             id="profile-link"
-            href="https://github.com/wwren/Sticky-Notes"
+            href="https://github.com/wwren/FrontendMentor_PriceSlider"
             target="_blank"
             rel="noreferrer"
           >

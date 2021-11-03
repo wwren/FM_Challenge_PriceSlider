@@ -7,7 +7,6 @@
   background: #d3d3d3;
   outline: none;
   opacity: 0.9;
-  border: solid 1px var(--empty-slider-bar);
   transition: background 450ms ease-in;
   background: linear-gradient(
     to right,
