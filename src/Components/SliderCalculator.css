@@ -24,6 +24,7 @@
 
 .price-slider__card__pageview {
   font-weight: var(--font-weight-light);
+  letter-spacing: 2px;
 }
 
 .price-slider__card__price--desktop {
