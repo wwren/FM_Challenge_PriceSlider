@@ -39,7 +39,7 @@ function SliderCalculator() {
     <>
       <div className="price-slider__card__number">
         <div className="price-slider__card__pageview">{pageview} PAGEVIEWS</div>
-        <div className="price-slider__card__price--desktop">
+        <div className="price-slider__card__price--desktop" id="price-range">
           <span className="price-slider__card__price--bold">
             $
             {isYearBill

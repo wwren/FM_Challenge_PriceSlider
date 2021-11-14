@@ -1,7 +1,7 @@
 import "./Footer.css";
 export default function Footer() {
   return (
-    <footer role="footer">
+    <footer>
       <div>
         <span>Copyright &copy;</span> Ran's Price Slider (FM challenge) 2021
       </div>

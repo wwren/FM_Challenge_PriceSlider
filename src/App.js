@@ -8,7 +8,7 @@ import Footer from "./Components/Footer.js";
 function App() {
   return (
     <>
-      <main role="main">
+      <main>
         <div className="price-slider__container">
           <Header />
           <div className="price-slider__card__wrapper">
