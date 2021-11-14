@@ -7,7 +7,7 @@ import "./SliderCalculator.css";
 const DISCOUNT_PERCENTAGE = 0.25;
 
 function SliderCalculator() {
-  const [priceInput, setpriceInput] = useState("8.00");
+  const [priceInput, setpriceInput] = useState("16.00");
   const [pageview, setpageview] = useState("10k");
   const [isYearBill, setisYearBill] = useState(false);
 

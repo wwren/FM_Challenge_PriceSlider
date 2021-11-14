@@ -1,17 +1,17 @@
 import "./Footer.css";
 export default function Footer() {
   return (
-    <footer>
+    <footer role="footer">
       <div>
         <span>Copyright &copy;</span> Ran's Price Slider (FM challenge) 2021
       </div>
       <div className="footer">
         <div>
           <a
-            id="profile-link"
+            id="profile-link__github"
             href="https://github.com/wwren/FrontendMentor_PriceSlider"
-            target="_blank"
-            rel="noreferrer"
+            onClick="window.open(this.href);return false"
+            rel="external"
           >
             <i className="fa fa-github">
               <span> GitHub</span>
@@ -20,10 +20,10 @@ export default function Footer() {
         </div>
         <div>
           <a
-            id="profile-link"
+            id="profile-link__linkedin"
             href="https://www.linkedin.com/in/ding-ran/"
-            target="_blank>"
-            rel="noreferrer"
+            onClick="window.open(this.href);return false"
+            rel="external"
           >
             <i className="fa fa-linkedin-square">
               <span> Linkedin</span>

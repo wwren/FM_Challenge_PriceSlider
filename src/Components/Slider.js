@@ -13,6 +13,7 @@ function Slider({ defaultPriceInput, setpriceInput }) {
       let percentage = `${Math.round(
         (slider.current.value / MAX_SLIDER_VALUE) * 100
       )}%`;
+      console.log("percentage", percentage);
       slider.current.style.background = `linear-gradient(to right, var(--full-slider-bar) ${percentage}, var(--empty-slider-bar) ${percentage})`;
     }
   };
@@ -26,6 +27,7 @@ function Slider({ defaultPriceInput, setpriceInput }) {
         value={defaultPriceInput}
         ref={slider}
         onInput={handleInput}
+        aria-labelledby="price-range"
       ></input>
     </>
   );

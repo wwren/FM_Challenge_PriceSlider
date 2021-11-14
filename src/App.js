@@ -7,23 +7,27 @@ import CTA from "./Components/CTA";
 import Footer from "./Components/Footer.js";
 function App() {
   return (
-    <div className="price-slider__container">
-      <Header />
-      <div className="price-slider__card__wrapper">
-        <div className="price-slider__card__top">
-          <SliderCalculator />
-        </div>
-        <div className="price-slider__card__bottom">
-          <div className="price-slider__card__bottom__left-panel">
-            <TextBoard />
+    <>
+      <main role="main">
+        <div className="price-slider__container">
+          <Header />
+          <div className="price-slider__card__wrapper">
+            <div className="price-slider__card__top">
+              <SliderCalculator />
+            </div>
+            <div className="price-slider__card__bottom">
+              <div className="price-slider__card__bottom__left-panel">
+                <TextBoard />
+              </div>
+              <div className="price-slider__card__bottom__right-panel">
+                <CTA />
+              </div>
+            </div>
           </div>
-          <div className="price-slider__card__bottom__right-panel">
-            <CTA />
-          </div>
         </div>
-      </div>
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

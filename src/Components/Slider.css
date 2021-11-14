@@ -10,8 +10,8 @@
   transition: background 450ms ease-in;
   background: linear-gradient(
     to right,
-    var(--slider-background) 22%,
-    var(--empty-slider-bar) 22%
+    var(--slider-background) 44%,
+    var(--empty-slider-bar) 44%
   );
 }
 
