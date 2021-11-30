@@ -1,4 +1,4 @@
-# Frontend Component Price Slider :eyes:
+# Price Slider in React :eyes:
 
 <p>
 <img src="./price_slider.png" width="100%">
